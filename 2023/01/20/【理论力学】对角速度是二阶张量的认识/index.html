@@ -150,9 +150,12 @@
             </div>
             <!-- Post -->
             <div class="typo" style="padding: 3rem;">
-                <p align="right"><font face="黑体" size=4>
-Created by Lelouch(转载请注明处处)</font></p>     
+                <p align="right">
+<font face="黑体" size=4>
+Created by Lelouch(转载请注明处处)</font>
+</p>        
        
+
      
 <h1 id="1-矢量运算的坐标阵运算形式"><a href="#1-矢量运算的坐标阵运算形式" class="headerlink" title="1.矢量运算的坐标阵运算形式"></a>1.矢量运算的坐标阵运算形式</h1><p>&emsp;&emsp;首先我们需要阐述一下坐标阵的概念和矢量运算的坐标阵表示。<br>&emsp;&emsp;矢量$ \pmb{a}$在某坐标系中的三个坐标构成的标量列阵称为矢量$\pmb{a}$在该坐标系下的<strong>坐标阵</strong>，记为$$\pmb{a}=\left[ a_x\quad a_y \quad a_z \right]^T \tag{1}$$</p>
 <p>&emsp;&emsp;所以，引入矢量的坐标阵后，矢量$\pmb{a}=a_x\pmb{i}+ a_y\pmb{j} + a_z\pmb{k}$可以表示为矩阵乘积形式<br>$$<br>\pmb{a}=\underline{\pmb{a}}^T \underline{\pmb{e}} =\underline{\pmb{e}}^T \underline{\pmb{a}} \tag{2}<br>$$<br> 其中$$\underline{\pmb{e}}=\left[\pmb{i}\quad \pmb{j} \quad \pmb{k}\right]^T\tag{3}$$<br>是基向量组成的列阵，称为<strong>基向量列阵</strong><br>&emsp;&emsp;若人为地将矢量$\pmb{a}$的三个坐标组成一个反对称方阵<br>$$\widetilde{\underline{\pmb{a}}}=\begin{bmatrix}<br>0    &amp;-a_z&amp;a_y  \\<br>a_z&amp;0    &amp;-a_x  \\<br>-a_y&amp;a_x&amp;0  \\<br>\end{bmatrix} \tag{4}$$<br>称为矢量$\pmb{a}$在该坐标系下的<strong>坐标方阵</strong>，我们很容易验证矢量运算<br>$$\pmb{c}=\pmb{a}\times\pmb{b} \tag{5}$$<br>与坐标阵运算<br>$$\underline{\pmb{c}}=\widetilde{\underline{\pmb{a}}}\underline{\pmb{b}} \tag{6}$$是等价的。 </p>
